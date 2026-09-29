@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio Page</title>
+<!-- Google Font chosen to compliment the creative theme of the work -->
+<link href="https://googleapis.com" rel="stylesheet">
+<style>
+    body {
+        background: whitesmoke;
+    } 
+    /* Centers the page with a border and drop-shadow */
+    #page {
+        width: 928px;
+        margin: 0 auto;
+        padding: 48px;
+        background: white;
+        border: 1px solid darkgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } 
+    h1 {
+        font: 48pt/1.0em 'Dancing Script', cursive;
+        text-align: center;
+        text-shadow: 2px 3px 6px darkorange;
+    }
+    /* The flexible box layout text box, sized slightly smaller than the page */
+    #textbox {
+        width: 800px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+    } 
+    /* Figure tag styled to the exact same 200px width as the image tag */
+    figure {
+        width: 200px;
+        margin: 20px;
+    } 
+    /* Thumbnail image tag with fixed portrait dimensions */
+    img {
+        width: 200px;
+        height: 200px;
+        border: 1px solid dimgray;
+        box-shadow: 2px 3px 6px darkgray;
+    } 
+    /* Figcaption styled with a minimum 12pt type, italicized, and centered */
+    figcaption {
+        font: italic 11pt/1.4em Georgia, serif;
+        text-align: center;
+        margin-top: 8px;
+    }
+</style>
+</head>
+
+<body>
+<div id="page">
+    <h1>Portfolio</h1>
+
+    <div id="textbox">
+        
+        <!-- Work 1 -->
+        <figure>
+            <a href="230921.jpg">
+                <img src="6ab1cafcd9dd5_download.jpg" alt="Graphic 230921 Thumbnail">
+            </a>
+            <figcaption>
+                Culver Pie Package
+            </figcaption>
+        </figure>
+
+        <!-- Work 2 -->
+        <figure>
+            <a href="231442.jpg">
+                <img src="6ab1cb1908c82_download.jpg" alt="Graphic 231442 Thumbnail">
+            </a>
+            <figcaption>
+                Jogging Poster
+            </figcaption>
+        </figure>
+
+        <!-- Work 3 -->
+        <figure>
+            <a href="232502.jpg">
+                <img src="6ab1cb343331a_download.jpg" alt="Graphic 232502 Thumbnail">
+            </a>
+            <figcaption>
+                Magazine Page
+            </figcaption>
+        </figure>
+
+    </div>
+</div>
+</body>
+</html>
