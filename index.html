@@ -2,12 +2,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Portfolio Page</title>
-<!-- Google Font chosen to compliment the creative theme of the work -->
+<title>Table Page</title>
 <link href="https://googleapis.com" rel="stylesheet">
 <style>
     body {
         background: whitesmoke;
+        font-family: Arial, sans-serif;
     } 
     /* Centers the page with a border and drop-shadow */
     #page {
@@ -32,65 +32,91 @@
         justify-content: center;
         align-items: flex-start;
         align-content: flex-start;
-    } 
-    /* Figure tag styled to the exact same 200px width as the image tag */
-    figure {
-        width: 200px;
-        margin: 20px;
-    } 
-    /* Thumbnail image tag with fixed portrait dimensions */
-    img {
-        width: 200px;
-        height: 200px;
-        border: 1px solid dimgray;
-        box-shadow: 2px 3px 6px darkgray;
-    } 
-    /* Figcaption styled with a minimum 12pt type, italicized, and centered */
-    figcaption {
-        font: italic 11pt/1.4em Georgia, serif;
-        text-align: center;
-        margin-top: 8px;
+    }
+
+    /* --- Custom Styled Video Game Table --- */
+    table {
+        width: 100%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        border: 1px solid gray;
+        box-shadow: 2px 3px 6px gray;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid lightgray;
+    }
+    /* Sticky Header configuration */
+    th {
+        position: sticky;
+        top: 0;
+        background: white;
+        color: #333;
+        border-bottom: 2px solid gray;
+    }
+    /* Zebra striping for alternate rows */
+    tr:nth-child(odd) {
+        background: whitesmoke;
     }
 </style>
 </head>
-
 <body>
+
 <div id="page">
-    <h1>Portfolio</h1>
-
+    <h1>Levels in the video game Hozy</h1>
+    
     <div id="textbox">
-        
-        <!-- Work 1 -->
-        <figure>
-            <a href="230921.jpg">
-                <img src="6ab1cafcd9dd5_download.jpg" alt="Graphic 230921 Thumbnail">
-            </a>
-            <figcaption>
-                Culver Pie Package
-            </figcaption>
-        </figure>
-
-        <!-- Work 2 -->
-        <figure>
-            <a href="231442.jpg">
-                <img src="6ab1cb1908c82_download.jpg" alt="Graphic 231442 Thumbnail">
-            </a>
-            <figcaption>
-                Jogging Poster
-            </figcaption>
-        </figure>
-
-        <!-- Work 3 -->
-        <figure>
-            <a href="232502.jpg">
-                <img src="6ab1cb343331a_download.jpg" alt="Graphic 232502 Thumbnail">
-            </a>
-            <figcaption>
-                Magazine Page
-            </figcaption>
-        </figure>
-
+        <!-- Hozy Levels Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Level Name</th>
+                    <th>Items to Clean</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>The Attic</td>
+                    <td>12 items</td>
+                </tr>
+                <tr>
+                    <td>Artist's Workshop</td>
+                    <td>24 items</td>
+                </tr>
+                <tr>
+                    <td>Dark Music Hall</td>
+                    <td>18 items</td>
+                </tr>
+                <tr>
+                    <td>Small Apartment</td>
+                    <td>15 items</td>
+                </tr>
+                <tr>
+                    <td>The Treehouse</td>
+                    <td>20 items</td>
+                </tr>
+                <tr>
+                    <td>The Penthouse</td>
+                    <td>32 items</td>
+                </tr>
+                <tr>
+                    <td>Old Café</td>
+                    <td>28 items</td>
+                </tr>
+                <tr>
+                    <td>Surreal Dreams</td>
+                    <td>10 items</td>
+                </tr>
+                <tr>
+                    <td>The Lighthouse</td>
+                    <td>25 items</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
+
 </body>
+</html>
 </html>
